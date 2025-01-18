@@ -27,7 +27,7 @@ user = Router()
 
 
 def get_month_names():
-    folder_path = 'D:\\Telegram bot\\oylik_bot\\app\\files'
+    folder_path = '/opt/bots/Oylik-Bot/app/files'
     excel_files = [f for f in os.listdir(folder_path) if f.endswith(('.xlsx', '.xls'))]
     excel_files_names = []
     for i in excel_files:
@@ -36,7 +36,7 @@ def get_month_names():
     return excel_files_names
 
 def get_excel_paths():
-    folder_path = 'D:\\Telegram bot\\oylik_bot\\app\\files'
+    folder_path = '/opt/bots/Oylik-Bot/app/files'
     excel_files = [os.path.join(folder_path, f) for f in os.listdir(folder_path) if f.endswith(('.xlsx', '.xls'))]
     return excel_files
 
